@@ -372,7 +372,8 @@ function ($stateProvider, $urlRouterProvider, $controllerProvider, $compileProvi
 	    templateUrl: "assets/views/login_forgot.html"
 	}).state('login.registration', {
 	    url: '/registration',
-	    templateUrl: "assets/views/login_registration.html"
+	    templateUrl: "assets/views/login_registration.html",
+        resolve: loadSequence('registrationCtrl'),
 	}).state('login.lockscreen', {
 	    url: '/lock',
 	    templateUrl: "assets/views/login_lock_screen.html"
