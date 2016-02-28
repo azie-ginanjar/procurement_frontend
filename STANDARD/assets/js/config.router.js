@@ -25,7 +25,7 @@ function ($stateProvider, $urlRouterProvider, $controllerProvider, $compileProvi
     // APPLICATION ROUTES
     // -----------------------------------
     // For any unmatched url, redirect to /app/dashboard
-    $urlRouterProvider.otherwise("/app/dashboard");
+    $urlRouterProvider.otherwise("/login/signin");
     //
     // Set up the states
     $stateProvider.state('app', {
@@ -366,7 +366,8 @@ function ($stateProvider, $urlRouterProvider, $controllerProvider, $compileProvi
 	    abstract: true
 	}).state('login.signin', {
 	    url: '/signin',
-	    templateUrl: "assets/views/login_login.html"
+	    templateUrl: "assets/views/login_login.html",
+        resolve: loadSequence('loginCtrl'),
 	}).state('login.forgot', {
 	    url: '/forgot',
 	    templateUrl: "assets/views/login_forgot.html"

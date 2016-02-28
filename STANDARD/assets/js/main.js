@@ -12,9 +12,9 @@ function ($rootScope, $state, $stateParams) {
     // GLOBAL APP SCOPE
     // set below basic information
     $rootScope.app = {
-        name: 'Clip-Two', // name of your project
-        author: 'ClipTheme', // author's name or company name
-        description: 'Angular Bootstrap Admin Template', // brief description
+        name: 'E-Procurement', // name of your project
+        author: 'ITGetlink', // author's name or company name
+        description: 'Web based application for online procurement', // brief description
         version: '1.0', // current version
         year: ((new Date()).getFullYear()), // automatic current year (for copyright information)
         isMobile: (function () {// true if the browser is a mobile device
@@ -30,7 +30,7 @@ function ($rootScope, $state, $stateParams) {
             isSidebarClosed: false, // true if you want to initialize the template with closed sidebar
             isFooterFixed: false, // true if you want to initialize the template with fixed footer
             theme: 'theme-1', // indicate the theme chosen for your project
-            logo: 'assets/images/logo.png', // relative path of the project logo
+            logo: 'assets/images/logo-PEI.png', // relative path of the project logo
         }
     };
     $rootScope.user = {
