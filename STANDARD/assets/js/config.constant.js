@@ -101,6 +101,9 @@ app.constant('JS_REQUIRES', {
         name: 'ngMap',
         files: ['../bower_components/ngmap/build/scripts/ng-map.min.js']
     }, {
+        name: 'ngCookies',
+        files: ['../bower_components/angular-cookies/angular-cookies.js']
+    }, {
         name: 'tc.chartjs',
         files: ['../bower_components/tc-angular-chartjs/dist/tc-angular-chartjs.min.js']
     }, {

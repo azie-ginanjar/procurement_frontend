@@ -6,7 +6,7 @@
 		</div>
 		<!-- start: LOGIN BOX -->
 		<div class="box-login">
-			<form class="form-login" action="index.html">
+			<form class="form-login">
 				<fieldset>
 					<legend>
 						Sign in to your account
@@ -16,12 +16,12 @@
 					</p>
 					<div class="form-group">
 						<span class="input-icon">
-							<input type="text" class="form-control" name="username" placeholder="Username">
+							<input type="text" class="form-control" ng-model="username" placeholder="Username">
 							<i class="fa fa-user"></i> </span>
 					</div>
 					<div class="form-group form-actions">
 						<span class="input-icon">
-							<input type="password" class="form-control password" name="password" placeholder="Password">
+							<input type="password" class="form-control password" ng-model="password" placeholder="Password">
 							<i class="fa fa-lock"></i>
 							<a class="forgot" ui-sref="login.forgot">
 								I forgot my password
@@ -34,7 +34,7 @@
 								Keep me signed in
 							</label>
 						</div>
-						<button type="submit" class="btn btn-primary pull-right">
+						<button class="btn btn-primary pull-right" ng-click="login()">
 							Login <i class="fa fa-arrow-circle-right"></i>
 						</button>
 					</div>

@@ -3,7 +3,7 @@
   "version": "1.3.0",
   "description": "AngularJs Bootstrap Admin Template",
   "scripts": {
-    "start": "node node_modules/http-server/bin/http-server -o"
+    "start": "node node_modules/http-server/bin/http-server"
   },
   "keywords": [
     "AngularJS",
